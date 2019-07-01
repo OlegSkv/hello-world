@@ -2,20 +2,7 @@ package com.olegskvortsov.top10downloader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.ScrollView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import javax.security.auth.login.LoginException;
 
@@ -91,16 +78,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if(charRead > 0) {
                         xmlResult.append(String.valueOf(inputBuffer, 0, charRead));
-                    }
-                }
-                reader.close();
 
-                return xmlResult.toString();
-            } catch (MalformedURLException e) {
-                Log.e(TAG, "downloadXML: Invalid URL " + e.getMessage());
-            } catch (IOException e) {
-                Log.e(TAG, "downloadXML: IO exception reading data: " + e.getMessage());
-            } catch (SecurityException e) {
+                        
+                        ADD THIS TEXT IN FILE
+                        
                 Log.e(TAG, "downloadXML: Security exception. Needs permission?: " + e.getMessage());
 //                e.printStackTrace();
             }
