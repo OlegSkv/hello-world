@@ -1,4 +1,6 @@
 # hello-world
 my first repository
 
-addition to the readme.md file to test new branch called feature
+I have deleted "addition to the readme.md" string
+It is from "New test branch"!!!!
+that is it
